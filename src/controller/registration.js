@@ -9,12 +9,12 @@ module.exports = (req, res, next) => {
     if (!result.status) {
       res.send({error: result.errors});
     } else {
-      db.findOne(user.email, (err, userTwo) => {
+      db.findOne(user.email, (err, existingUser) => {
         if (err) {
           console.error("ERROR: ", err);
           res.send({error: err});
         }
-        if(!userTwo) {
+        if(!existingUser) {
           db.insertOne(user, err => {
             if (err) {
               console.error("ERROR: ", err);
