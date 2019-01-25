@@ -1,6 +1,6 @@
 module.exports = {
     doesNotExist: 'doesNotExist',
     wrongPass: 'wrongPass',
-    alreadyExists: 'alreadyExists', 
+    alreadyExists: 'alreadyExists',
     registrated: 'registrated'
 }
