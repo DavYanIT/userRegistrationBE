@@ -1,7 +1,6 @@
 const validator = require('node-input-validator');
 
 module.exports = (user) => {
-    console.log(user)
     let registrationValidator = new validator( user, {
         firstName: 'required|minLength:3',
         lastName: 'required|minLength:3',
