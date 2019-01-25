@@ -14,7 +14,7 @@ const findOne = (email, callback) => {
         if (error) {
             return error;
         }
-        db.collection("users").findOne({email}, callback)
+        db.collection("users").findOne({email}, callback);
         dbClose(db);
     })
 }
@@ -24,12 +24,12 @@ const insertOne = (user, callback) => {
         if (error) {
             return error;
         }
-        db.collection("users").insertOne(user, callback)
+        db.collection("users").insertOne(user, callback);
         dbClose(db);
     })
 }
 
 module.exports = {
     findOne,
-    insertOne,
+    insertOne
 }

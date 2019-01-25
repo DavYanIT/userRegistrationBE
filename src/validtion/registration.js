@@ -17,7 +17,7 @@ module.exports = (user) => {
             }
         } else {
             return {
-                status: true,
+                status: true
             }
         }
     })

@@ -14,7 +14,7 @@ module.exports = (email, password) => {
             }
         } else {
             return {
-                status: true,
+                status: true
             }
         }
     })
